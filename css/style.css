@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Dosis:300,400,500,600');
+
+/* reset css */
+    html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Montserrat', sans-serif;
+    margin: 0;
+    /* background-color: rgb(246, 242, 242); */
+    background-image:url('https://media0.giphy.com/media/vBjLa5DQwwxbi/200.gif');
+    background-position: center;
+    background-size: cover;
+}
+h1,h2,h3,h4,h5,h6,p,figure,ul,ol{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    color: #222;
+    text-decoration: none;
+}
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+:root{
+    --color-default: #000;
+    --color-primary: #2b7dc0;
+    --color-warning: #e23131;
+    --color-success: #4db32e;
+}
+/* optimisation css. Tout en rem 5/20 */
+  main{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 5rem;
+  }
+  ul li img{
+    max-width: 60%;
+    display: none;
+    margin: 0 auto;
+    border-radius: 2rem 2rem 0 0 ;
+    border: 0.2rem  solid #fff;
+  }
+  ul li img.active{
+    display: block;
+    animation: fade 0.8s;
+  }
+  @keyframes fade {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  section {
+    width: 60%;
+    margin: 0 auto;
+    height: auto;
+    border: 0.2rem  solid rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.808);
+    border-radius: 0 0 2rem 2rem;
+    box-shadow: 0 1rem 1rem rgba(255, 252, 252, 0.3);
+    display: flex;
+    justify-content: center;
+  }
+  .material-icons {
+    font-size: 10rem;
+    margin: 1rem;
+    cursor: pointer;
+  }
+  footer{
+      text-align: center;
+      color: #fff;
+      background: rgba(0, 0, 0, 0.863);
+      padding: 2rem;
+  }
